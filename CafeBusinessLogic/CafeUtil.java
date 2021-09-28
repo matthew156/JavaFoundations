@@ -1,4 +1,4 @@
-import java.util;
+import java.util.*;
 public class CafeUtil{
     public int getStreakGoal(){
            int sum = 0;
@@ -22,10 +22,14 @@ public class CafeUtil{
             sum+=items[i];
         }
         return sum;
-    public double displayMenu(String[] string, double[] num){
-        ArrayList<String> string = new ArrayList<String>();
-        list.add(string);
-        ArrayList<double> num = new ArrayList<double>();
-        list.add(num);
     }
+    public void displayMenu(ArrayList<String> menu, ArrayList<Double> prices) {
+        for(int i=0; i<menu.size(); i++){
+            System.out.println( i + " " + menu.get(i) + " -- $" + prices.get(i));
+        }
     }
+    public void addCustomer(ArrayList<String> customers) {
+        String userName = System.console().readLine("Welcome! Please Enter your name: \n");
+        customers.add(userName);
+    }
+}
