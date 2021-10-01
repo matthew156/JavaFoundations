@@ -7,6 +7,12 @@ public class GorillaTest{
     dom.eatBannanas();
     dom.eatBannanas();
     dom.climb();
-    }
-
+    Bat bat = new Bat();
+    bat.fly();
+	bat.fly();
+	bat.eatHumans();
+	bat.attackTown();
+	bat.attackTown();
+	bat.attackTown();
 }
+    }
